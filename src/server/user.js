@@ -4,13 +4,13 @@ class user {
     id;
     socket;
     connect_time;
-    variable;
+    data;
 
     constructor(socket) {
         this.socket = socket;
         this.id = socket.id;
         this.connect_time = new Date();
-        this.variable = {};
+        this.data = {};
     }
 }
 

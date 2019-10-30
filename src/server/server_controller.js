@@ -52,8 +52,8 @@ class server_controller {
         this.usersList.push(currentUser);
 
         this.requestHandlersList.forEach((item) => {
-            socket.on(item.cmd, (message) => {
-                item.func(this, message, currentUser);
+            socket.on(item.cmd, (params) => {
+                item.func(this, params, currentUser);
             });
         });
 
