@@ -1,5 +1,5 @@
 {
-  "name": "raymon",
+  "name": "@shamsdev/raymon",
   "version": "1.0.0",
   "description": "real-time server",
   "main": "index.js",
@@ -10,5 +10,19 @@
   "license": "MIT",
   "dependencies": {
     "socket.io": "^2.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamsdev/raymon.git"
+  },
+  "keywords": [
+    "realtime",
+    "server",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/shamsdev/raymon/issues"
+  },
+  "homepage": "https://github.com/shamsdev/raymon#readme"
 }

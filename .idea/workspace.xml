@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be55cc15-6453-4c76-8620-7c15bd44b4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request_handlers/chat_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/request_handlers/ping_pong.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/request_handlers/set_name_request_handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/user.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +33,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1935" />
-    <option name="height" value="1095" />
   </component>
   <component name="ProjectId" id="1Suw2xEbCrXekzypijLa0OA8EWw" />
   <component name="ProjectLevelVcsManager">
@@ -95,7 +84,9 @@
       <workItem from="1561375267042" duration="904000" />
       <workItem from="1561380141844" duration="4350000" />
       <workItem from="1561386066542" duration="2358000" />
-      <workItem from="1572426586378" duration="4216000" />
+      <workItem from="1572426586378" duration="4998000" />
+      <workItem from="1572520145548" duration="204000" />
+      <workItem from="1572520389205" duration="598000" />
     </task>
     <servers />
   </component>
@@ -116,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
