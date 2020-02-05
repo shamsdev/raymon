@@ -1,6 +1,0 @@
-{
-  "server": {
-    "port": 5005
-  },
-  "logs": "all"
-}
