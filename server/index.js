@@ -6,8 +6,8 @@
 
 'use strict';
 const Datastore = require('nedb'),
-    db = new Datastore({filename: './server/db/datastore', autoload: true}),
-    usersDb = new Datastore({filename: './server/db/users', autoload: true});
+    db = new Datastore({filename: 'server/db/datastore', autoload: true}),
+    usersDb = new Datastore({filename: 'server/db/users', autoload: true});
 
 const serverController = require('./src/base_server/server_controller');
 const panelController = require('./src/panel/panel_controller');
