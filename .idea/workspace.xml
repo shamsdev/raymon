@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be55cc15-6453-4c76-8620-7c15bd44b4ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_handlers/ping_pong.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/statics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/server_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/base_server/models/user.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +30,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>clinets</find>
-      <find>clients</find>
-      <find>this</find>
-      <find>#</find>
-      <find>onClientConnected</find>
-      <find>user</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -38,35 +37,46 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/services" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="D:\Projects\NodJs\GameServer_NodeBase\src\data" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/services" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/src/server" />
       <recent name="D:\Projects\NodJs\GameServer_NodeBase\src\request_handlers" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/public/img" />
+      <recent name="$PROJECT_DIR$/server/public" />
+      <recent name="$PROJECT_DIR$/client/src/assets" />
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/server/src/base_server" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -86,18 +96,16 @@
       <workItem from="1561386066542" duration="2358000" />
       <workItem from="1572426586378" duration="4998000" />
       <workItem from="1572520145548" duration="204000" />
-      <workItem from="1572520389205" duration="598000" />
+      <workItem from="1572520389205" duration="1275000" />
+      <workItem from="1572797632340" duration="34000" />
+      <workItem from="1573038418809" duration="10691000" />
+      <workItem from="1573070887267" duration="133000" />
+      <workItem from="1573071220007" duration="242000" />
+      <workItem from="1573071523215" duration="747000" />
+      <workItem from="1580034958939" duration="45972000" />
+      <workItem from="1580812989391" duration="44781000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -114,5 +122,47 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#Inspections" timestamp="1580037340359">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1580037340359" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580897701813">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580897701813" />
+    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580834923294">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1580834923294" />
+    <state width="1419" height="230" key="GridCell.Tab.0.bottom" timestamp="1580796203703">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580796203703" />
+    <state width="1419" height="230" key="GridCell.Tab.0.center" timestamp="1580796203702">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580796203702" />
+    <state width="1419" height="230" key="GridCell.Tab.0.left" timestamp="1580796203702">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580796203702" />
+    <state width="1419" height="230" key="GridCell.Tab.0.right" timestamp="1580796203703">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580796203703" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1580036353301">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580036353301" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580891384654">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580891384654" />
+    <state x="450" y="370" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580056846531">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="450" y="370" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1580056846531" />
   </component>
 </project>

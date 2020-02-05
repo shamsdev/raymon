@@ -1,5 +1,2 @@
 ## Raymon
-A NodeJS-Based real-time server
-
-run
-`$ node index.js`
+Raymon is a tiny real-time server based on Socket.IO
