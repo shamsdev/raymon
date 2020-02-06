@@ -90,8 +90,39 @@ function setupChatServer() {
             time: new Date().getTime()
         };
 
-        chatServer.sayAll("message", message);
+        if (message.text.toLowerCase().substr(0, 8) === "/adduser") {
+            try {
+                let commands = message.text.split(" ");
+                let displayName = commands[1];
+                let username = commands[2];
+                let password = commands[3];
 
+                if (!displayName || !username || !password) {
+                    message.text = 'Invalid command parameters';
+                    chatServer.say("message", user, message);
+                    return;
+                }
+
+                global.usersDb.insert({
+                    username: username,
+                    password: password,
+                    publicData: {
+                        displayName: displayName,
+                        avatar: "https://static1.squarespace.com/static/54b7b93ce4b0a3e130d5d232/54e20ebce4b014cdbc3fd71b/5a992947e2c48320418ae5e0/1519987239570/icon.png"
+                    }
+                });
+
+                message.text = `User '${displayName}' has been added.`;
+                chatServer.say("message", user, message);
+                return;
+            } catch (e) {
+                message.text = `Error: ${e.message}`;
+                chatServer.say("message", user, message);
+                console.log(e);
+            }
+        }
+
+        chatServer.sayAll("message", message);
         message.user_id = message.user.id;
         delete message.user;
         delete message.uid;
