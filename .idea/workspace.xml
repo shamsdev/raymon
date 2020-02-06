@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be55cc15-6453-4c76-8620-7c15bd44b4ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/datastore" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/datastore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/db/users" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/users" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/css/app.d3af320b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/css/app.f8ffa0f0.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/js/app.38eee544.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/js/app.38eee544.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/precache-manifest.9f689f141e8013a64c6d73a7634de023.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/app.63beb44d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/app.63beb44d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/precache-manifest.0d7c723aa2895889f14fb84895838317.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/public/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/public/service-worker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +101,7 @@
       <workItem from="1573071220007" duration="242000" />
       <workItem from="1573071523215" duration="747000" />
       <workItem from="1580034958939" duration="45972000" />
-      <workItem from="1580812989391" duration="59476000" />
+      <workItem from="1580812989391" duration="65506000" />
     </task>
     <servers />
   </component>
@@ -130,10 +130,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580897701813" />
-    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580983943589">
+    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581003580295">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1580983943589" />
+    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1581003580295" />
     <state width="1419" height="230" key="GridCell.Tab.0.bottom" timestamp="1580796203703">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -79,7 +79,6 @@ function setupChatServer() {
         })
     });
 
-
     chatServer.listen("message", async (params, user) => {
         let message = {
             uid: params.uid,
