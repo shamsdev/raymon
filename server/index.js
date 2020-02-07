@@ -52,39 +52,59 @@ function setupGlobals() {
 }
 
 function setupChatServer() {
-    chatServer.listenInternal(serverController.serverHandler.OnUserConnect, async (user) => {
-        chatServer.say("init_data", user, {
-            id: user.data._id,
-            ...user.data.publicData
-        });
-
-        global.mainDb.find({}).sort({time: -1}).limit(30).exec((err, docs) => {
-            if (docs === null || docs.length === 0) {
-                chatServer.say("update", user, docs);
-                return;
-            }
-
-            let changedCount = 0;
-            for (let i = 0; i < docs.length; i++) {
-                global.usersDb.find({_id: docs[i].user_id}).exec((err, msgUser) => {
-                    docs[i].user = msgUser[0].publicData;
-                    docs[i].user.id = docs[i].user_id;
-                    delete docs[i].user_id;
-                    changedCount++
-
-                    if (changedCount === docs.length)
-                        chatServer.say("update", user, docs);
+    chatServer.listenInternal(serverController.serverHandler.OnUserConnect,
+        async (user) => {
+            global.usersDb.find({}).exec((err, users) => {
+                let usersData = {};
+                users.forEach((user) => {
+                    usersData[user._id] = {
+                        id: user._id,
+                        publicData: user.publicData,
+                        state: {}
+                    };
                 });
-            }
-        })
-    });
+
+                chatServer.say("init_data", user, {
+                    userId: user.data._id,
+                    users: usersData
+                });
+            });
+
+            chatServer.listenInternal(serverController.serverHandler.OnUserDisconnect,
+                async (user) => {
+                    updateUserState(user, {is_typing: false})
+                });
+
+            global.mainDb.find({}).sort({time: -1}).limit(30).exec((err, docs) => {
+                if (docs === null || docs.length === 0) {
+                    chatServer.say("update", user, docs);
+                    return;
+                }
+
+                let changedCount = 0;
+                for (let i = 0; i < docs.length; i++) {
+                    global.usersDb.find({_id: docs[i].user_id}).exec((err, msgUser) => {
+                        docs[i].user = {
+                            id: docs[i].user_id,
+                            publicData: msgUser[0].publicData
+                        };
+
+                        delete docs[i].user_id;
+                        changedCount++;
+
+                        if (changedCount === docs.length)
+                            chatServer.say("update", user, docs);
+                    });
+                }
+            })
+        });
 
     chatServer.listen("message", async (params, user) => {
         let message = {
             uid: params.uid,
             user: {
                 id: user.data._id,
-                ...user.data.publicData
+                publicData: user.data.publicData
             },
             text: params.text,
             time: new Date().getTime()
@@ -129,7 +149,22 @@ function setupChatServer() {
         global.mainDb.insert(message);
     });
 
+    chatServer.listen("update_state", (params, user) => updateUserState(user, params));
+
     chatServer.start();
+}
+
+function updateUserState(user, params) {
+    user.data.state = {
+        ...user.data.state,
+        ...params
+    };
+
+    chatServer.sayAll("update_user_data", {
+        id: user.data._id,
+        publicData: user.data.publicData,
+        state: user.data.state
+    });
 }
 
 start();
