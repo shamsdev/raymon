@@ -95,7 +95,5 @@ typings/
 # Intellij Ide local files
 .idea/
 
-/client
-/panel
 /server/db/
 # End of https://www.gitignore.io/api/node

@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be55cc15-6453-4c76-8620-7c15bd44b4ec" name="Default Changelist" comment="">
+    <list default="true" id="5f7c46fa-68bf-470e-ba56-852a643402f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GameServer_NodeBase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/css/app.c1a64747.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/css/chunk-vendors.fbe9bade.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/bg.adbccee0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/msapplication-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/icons/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/img/send.9a67d1e6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/app.087f8bb1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/app.087f8bb1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/chunk-vendors.e2629d09.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/js/chunk-vendors.e2629d09.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/precache-manifest.ad5641d1375dac57412032e9c6fc9e27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/base_server/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/base_server/server_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/panel/panel_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/panel/routes/api/posts.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="GameServer_NodeBase" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,8 +61,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Suw2xEbCrXekzypijLa0OA8EWw" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1XkcHYy2EbPVz5R3PzXsUKFj9P7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -32,30 +71,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/services" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/services" />
-      <recent name="$PROJECT_DIR$/client/src/components" />
-      <recent name="$PROJECT_DIR$/src/server" />
-      <recent name="D:\Projects\NodJs\GameServer_NodeBase\src\request_handlers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server/public/img" />
-      <recent name="$PROJECT_DIR$/server/public" />
-      <recent name="$PROJECT_DIR$/client/src/assets" />
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/server/src/base_server" />
-    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -74,93 +100,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be55cc15-6453-4c76-8620-7c15bd44b4ec" name="Default Changelist" comment="" />
-      <created>1561304869909</created>
+      <changelist id="5f7c46fa-68bf-470e-ba56-852a643402f6" name="Default Changelist" comment="" />
+      <created>1581593445482</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561304869909</updated>
-      <workItem from="1561304871572" duration="11303000" />
-      <workItem from="1561375267042" duration="904000" />
-      <workItem from="1561380141844" duration="4350000" />
-      <workItem from="1561386066542" duration="2358000" />
-      <workItem from="1572426586378" duration="4998000" />
-      <workItem from="1572520145548" duration="204000" />
-      <workItem from="1572520389205" duration="1275000" />
-      <workItem from="1572797632340" duration="34000" />
-      <workItem from="1573038418809" duration="10691000" />
-      <workItem from="1573070887267" duration="133000" />
-      <workItem from="1573071220007" duration="242000" />
-      <workItem from="1573071523215" duration="747000" />
-      <workItem from="1580034958939" duration="45972000" />
-      <workItem from="1580812989391" duration="68712000" />
-      <workItem from="1581018800240" duration="742000" />
-      <workItem from="1581073150309" duration="11113000" />
-      <workItem from="1581170841757" duration="112000" />
-      <workItem from="1581173132435" duration="240000" />
-      <workItem from="1581264956260" duration="1201000" />
+      <updated>1581593445482</updated>
+      <workItem from="1581593448960" duration="609000" />
+      <workItem from="1582104374829" duration="56000" />
+      <workItem from="1582106624678" duration="569000" />
+      <workItem from="1582107661076" duration="312000" />
+      <workItem from="1582107990889" duration="1030000" />
+      <workItem from="1582373905584" duration="359000" />
+      <workItem from="1582447663661" duration="2442000" />
+      <workItem from="1582552733589" duration="55000" />
+      <workItem from="1582993882810" duration="3095000" />
+      <workItem from="1583776333562" duration="1168000" />
+      <workItem from="1586623722761" duration="6688000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="127" key="#Inspections" timestamp="1580037340359">
+    <state x="435" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582107710342">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="127" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1580037340359" />
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580897701813">
+    <state x="435" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1582107710342" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1582552772418">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580897701813" />
-    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581003953017">
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582552772418" />
+    <state x="449" y="52" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586623932947">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="427" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1581003953017" />
-    <state width="1419" height="230" key="GridCell.Tab.0.bottom" timestamp="1580796203703">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1419" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580796203703" />
-    <state width="1419" height="230" key="GridCell.Tab.0.center" timestamp="1580796203702">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1419" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580796203702" />
-    <state width="1419" height="230" key="GridCell.Tab.0.left" timestamp="1580796203702">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1419" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580796203702" />
-    <state width="1419" height="230" key="GridCell.Tab.0.right" timestamp="1580796203703">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1419" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580796203703" />
-    <state x="221" y="100" key="SettingsEditor" timestamp="1580036353301">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580036353301" />
-    <state x="378" y="97" width="837" height="729" key="find.popup" timestamp="1581073624818">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="378" y="97" width="837" height="729" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1581073624818" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580891384654">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580891384654" />
-    <state x="450" y="370" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580056846531">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="450" y="370" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1580056846531" />
+    <state x="449" y="52" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1586623932947" />
   </component>
 </project>
