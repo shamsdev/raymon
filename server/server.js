@@ -7,6 +7,7 @@
 const config = require('./src/data/config');
 const tcp = require('./src/socket/tcp');
 const udp = require('./src/socket/udp');
+const bufferHandler = require('./src/buffer_handler');
 
 function main() {
     setupTCP();
@@ -25,14 +26,24 @@ function setupTCP() {
 
     tcp.on('connection', function (socket) {
         console.log('A new TCP connection has been established.');
-        socket.write('Hello, client.');
+
+        // let i = setInterval(() => {
+        //     socket.write('<SOF>Hello From TCP!<EOF>');
+        // }, 500);
+
+
+        let bh = new bufferHandler();
+        bh.setOnReceivePacketCallback(function (header, payload) {
+            console.log(`TCP packet received with header: ${JSON.stringify(header)} and payload: ${JSON.stringify(payload)}`);
+        });
 
         socket.on('data', function (chunk) {
-            console.log(`TCP Data received from client: ${chunk.toString()}`);
+            bh.onReceiveChunk(chunk);
         });
 
         socket.on('end', function () {
             console.log('Closing connection with the client');
+            //clearInterval(i);
         });
 
         socket.on('error', function (err) {
@@ -50,14 +61,26 @@ function setupUDP() {
         console.log(`UDP server listening on ${config.udp.host}:${config.udp.port}`);
     });
 
-
-    udp.on('message', (msg, rinfo) => {
-        console.log(`UDP server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
-       setInterval(()=>{
-           udp.send(rinfo.port, rinfo.address, "Salam back!");
-       },1000/66);
+    udp.on('connect', () => {
+        console.log(`UDP connect`);
     });
 
+    udp.on('error', (error) => {
+        console.log(`UDP error: ${error}`);
+    });
+
+    udp.on('close', () => {
+        console.log(`UDP close`);
+    });
+
+    udp.on('message', (msg, rinfo) => {
+        bufferHandler.onReceiveDatagramPacket(msg, (header, payload) => {
+            console.log(`UDP server got packet with header: ${JSON.stringify(header)} and payload ${JSON.stringify(payload)} from ${rinfo.address}:${rinfo.port}`);
+        });
+        // setInterval(() => {
+        //     udp.send(rinfo.port, rinfo.address, "<SOF>Hello From UDP!<EOF>");
+        // }, 500);
+    });
 }
 
 

@@ -14,6 +14,6 @@ module.exports = {
         server.on(event, listener);
     },
     send(port, ip, message) {
-        server.send(new Buffer(message), port, ip);
+        server.send(Buffer.from(message), port, ip);
     }
 };
