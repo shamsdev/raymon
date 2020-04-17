@@ -1,4 +1,5 @@
 const headerLength = 2;
+const Packet = require('./packet');
 
 class BufferHandler {
 
@@ -9,9 +10,14 @@ class BufferHandler {
     }
 
     static getHeader(buffer, length) {
-        return {
-            pl: buffer.readUIntLE(0, length)
+        let pl;
+        try {
+            pl = buffer.readUIntLE(0, length);
+        } catch (e) {
+            //Handle corrupter packet
         }
+
+        return {pl}
     }
 
     static getPayload(buffer, header) {
@@ -22,7 +28,7 @@ class BufferHandler {
         const header = this.getHeader(dgram, headerLength);
         dgram = dgram.slice(headerLength);
         const payload = this.getPayload(dgram, header);
-        callback(header, payload);
+        callback(new Packet(header, payload));
     }
 
     onReceiveChunk(chunk) {
@@ -60,7 +66,8 @@ class BufferHandler {
             return false;
 
         if (this.buffer.length >= this.header.pl) {
-            this._receiveCallback(this.header, BufferHandler.getPayload(this.buffer, this.header));
+            this._receiveCallback(
+                new Packet(this.header, BufferHandler.getPayload(this.buffer, this.header)));
             this.buffer = this.buffer.slice(this.header.pl);
             this.header = null;
             return this.buffer.length > 0;

@@ -13,7 +13,7 @@ module.exports = {
             return console.log('Error: Udp is not initialized yet.');
         server.on(event, listener);
     },
-    send(port, ip, message) {
-        server.send(Buffer.from(message), port, ip);
+    send(buffer,port, ip) {
+        server.send(buffer, port, ip);
     }
 };

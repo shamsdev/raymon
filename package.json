@@ -1,6 +1,6 @@
 {
   "name": "raymon",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "tiny real-time server",
   "main": "server/server.js",
   "scripts": {
@@ -9,7 +9,9 @@
   },
   "author": "Mohammad Shams - ShamsDev.com",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.3"
   },

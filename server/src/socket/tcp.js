@@ -3,7 +3,7 @@ const server = new Net.Server();
 let isInitialized = false;
 
 module.exports = {
-    init(cfg) {
+      init(cfg) {
         server.listen(cfg.port, cfg.host);
         isInitialized = true;
     },
