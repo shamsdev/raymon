@@ -1,4 +1,3 @@
-// Nodejs encryption with CTR
 const crypto = require('crypto');
 const algorithm = 'aes-256-cbc';
 const key = crypto.randomBytes(32);
@@ -22,8 +21,8 @@ function decrypt(text) {
     return decrypted.toString();
 }
 
-const { generateKeyPairSync } = require('crypto');
-const { publicKey, privateKey } = generateKeyPairSync('rsa', {
+const {generateKeyPairSync} = require('crypto');
+const {publicKey, privateKey} = generateKeyPairSync('rsa', {
     modulusLength: 4096,
     publicKeyEncoding: {
         type: 'spki',
@@ -36,6 +35,8 @@ const { publicKey, privateKey } = generateKeyPairSync('rsa', {
         passphrase: 'qerqtermoohamms'
     }
 });
-let b = crypto.publicEncrypt(publicKey,Buffer.from('salam'));
-var deflated = zlib.deflateSync(Buffer.from("salam"));
-console.log(encrypt("salamsalamsalamsalamsalamsalam"));
+function getMD5(string) {
+    return crypto.createHash('md5').update(string).digest('hex');
+}
+
+module.exports.getMD5 = getMD5;

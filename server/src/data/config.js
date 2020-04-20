@@ -1,4 +1,4 @@
-module.exports = Object.freeze({
+module.exports = {
     tcp: {
         enabled: true,
         host: '0.0.0.0',
@@ -11,4 +11,4 @@ module.exports = Object.freeze({
         host: '0.0.0.0',
         port: 3000
     },
-});
+};

@@ -1,19 +1,26 @@
 const dgram = require('dgram');
-const server = dgram.createSocket('udp4');
 
-let isInitialized = false;
-
-module.exports = {
-    init(cfg) {
-        server.bind(cfg.port, cfg.host);
-        isInitialized = true;
-    },
-    on(event, listener) {
-        if (!isInitialized)
-            return console.log('Error: Udp is not initialized yet.');
-        server.on(event, listener);
-    },
-    send(buffer,port, ip) {
-        server.send(buffer, port, ip);
+class UDP {
+    constructor() {
+        this.server = dgram.createSocket('udp4');
+        this.isInitialized = false;
     }
-};
+
+    init(cfg) {
+        this.server.bind(cfg.port, cfg.host);
+        this.isInitialized = true;
+    }
+
+    on(event, listener) {
+        if (!this.isInitialized)
+            return console.log('Error: Udp is not initialized yet.');
+        this.server.on(event, listener);
+    }
+
+    send(buffer, port, ip) {
+        this.server.send(buffer, port, ip);
+    }
+}
+
+
+module.exports = exports = UDP;
