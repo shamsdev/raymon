@@ -9,7 +9,8 @@ const bufferHandler = require('../socket/buffer_handler');
 class Server {
     static SocketType = Object.freeze({
         TCP: 'tcp',
-        UDP: 'udp'
+        UDP: 'udp',
+        WS: 'ws'
     });
 
     constructor() {
