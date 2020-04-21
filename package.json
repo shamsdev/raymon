@@ -2,13 +2,13 @@
   "name": "raymon",
   "version": "2.0.1",
   "description": "tiny real-time server",
-  "main": "server/src/index.js",
+  "main": "lib/index.js",
   "files": [
-    "server/"
+    "lib/"
   ],
   "scripts": {
-    "start": "node server/test/test.js",
-    "dev": "nodemon server/test/test.js"
+    "test": "node test/test.js",
+    "dev": "nodemon test/test.js"
   },
   "author": "Mohammad Shams - ShamsDev.com",
   "license": "MIT",
