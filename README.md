@@ -5,7 +5,7 @@
 [![Dependency Status](https://david-dm.org/shamsdev/raymon.svg)](https://david-dm.org/shamsdev/raymon)
 [![devDependency Status](https://david-dm.org/shamsdev/raymon/dev-status.svg)](https://david-dm.org/shamsdev/raymon#info=devDependencies)
 
-Raymon is a tiny real-time server (Just started!)
+Raymon is a tiny real-time server for NodeJS (Just started!)
 
 #### Transport Types
 * Raw TCP and UDP sockets [60%]
