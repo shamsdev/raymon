@@ -1,6 +1,6 @@
 {
   "name": "raymon",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "tiny real-time server",
   "main": "server/src/index.js",
   "files": [
@@ -13,7 +13,8 @@
   "author": "Mohammad Shams - ShamsDev.com",
   "license": "MIT",
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto": "^1.0.1",
+    "ws": "^7.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

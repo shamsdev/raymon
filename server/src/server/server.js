@@ -1,6 +1,7 @@
 const default_config = require('../data/config');
 const TCP = require('../socket/tcp');
 const UDP = require('../socket/udp');
+const WebSocket = require('../socket/websocket');
 const User = require('../user/user');
 const Users = require('../user/users');
 const bufferHandler = require('../socket/buffer_handler');
@@ -14,6 +15,8 @@ class Server {
     constructor() {
         this.tcp = null;
         this.udp = null;
+        this.ws = null;
+
         this.config = default_config;
         this.users = new Users();
 
@@ -23,6 +26,7 @@ class Server {
     start() {
         this._setupTCP(this.config.tcp);
         this._setupUDP(this.config.udp);
+        this._setupWebsocket(this.config.websocket);
     }
 
     _setupTCP(config) {
@@ -149,6 +153,47 @@ class Server {
                     this.users.getWithUDPAddress(rinfo.address, rinfo.port), packet);
 
             });
+        });
+    }
+
+    _setupWebsocket(config) {
+        if (!config.enabled)
+            return;
+
+        this.ws = new WebSocket();
+        this.ws.init(config);
+
+        this.ws.on('listening', () => {
+            console.log(`WS server listening on ${config.host}:${config.port}`);
+        });
+
+        this.ws.on('close', () => {
+            console.log(`WS close`);
+        });
+
+        this.ws.on('error', (error) => {
+            console.log(`WS error ${error}`);
+        });
+
+        this.ws.on('connection', (socket) => {
+            console.log("A new websocket connection stablished.");
+
+            socket.on('close', (code, reason) => {
+                console.log(`WS connection closed with code ${code} and reason "${reason}"`);
+            });
+
+            socket.on('message', (message) => {
+                console.log('WS received: %s', message);
+            });
+
+            socket.on('error', (error) => {
+                console.log(`WS Error: "${error}"`);
+            });
+
+           setInterval(()=>{
+               socket.send('something is coming ...');
+               console.log("ok");
+           },1000)
         });
     }
 
