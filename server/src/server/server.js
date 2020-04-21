@@ -189,11 +189,6 @@ class Server {
             socket.on('error', (error) => {
                 console.log(`WS Error: "${error}"`);
             });
-
-           setInterval(()=>{
-               socket.send('something is coming ...');
-               console.log("ok");
-           },1000)
         });
     }
 
