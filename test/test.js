@@ -5,8 +5,13 @@ const server = new RaymonServer();
 server.start();
 
 let room = server.createRoom();
+room.sendAll();
 
-server.addRequestHandler("hey",(socket,user,packet)=>{
+server.addRequestHandler("hey", (args) => {
+
+});
+
+server.addEventHandler(RaymonServer.EventHandler.OnUserDisconnect, (args) => {
 
 });
 
