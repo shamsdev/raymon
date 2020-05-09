@@ -1,6 +1,6 @@
 {
   "name": "raymon",
-  "version": "2.0.8a",
+  "version": "2.0.13",
   "description": "tiny real-time server",
   "main": "lib/index.js",
   "files": [

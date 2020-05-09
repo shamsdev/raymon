@@ -5,18 +5,24 @@ const server = new RaymonServer();
 server.start();
 
 let room = server.createRoom();
-room.sendAll();
+room.addMessageHandler('set_name', (args) => {
+    server.sendMessage(args.user, "ok got your name :)", {});
+});
 
-server.addRequestHandler("hey", (args) => {
+server.addMessageHandler("hey", (args) => {
     server.sendMessage(args.user, "hey", {});
 });
 
-server.addEventHandler(RaymonServer.EventHandler.OnUserConnect, (args) => {
+let onConnectHandler = function (args) {
     console.log('user connect: ' + args.user.id);
     server.sendMessage(args.user, "hey", {});
-});
+    room.addUser(args.user);
+    room.sendMessage('hey_from_group', {});
+};
 
-server.addEventHandler(RaymonServer.EventHandler.OnUserDisconnect, (args) => {
+server.addEventHandler('user_connect', onConnectHandler);
+
+server.addEventHandler('user_disconnect', (args) => {
     console.log('user disconnected: ' + args.user.id);
     console.log('session time: ' + args.user.sessionTime + 's');
 });
